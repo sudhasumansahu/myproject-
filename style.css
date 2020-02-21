@@ -1,0 +1,350 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: sans-serif;
+}
+
+
+/*-----------------navigation------------------*/
+
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
+}
+
+.navbar
+{
+  
+  background-image: linear-gradient(to right, #a517ba,#5f1782); 
+  padding: 0  !important;
+}
+
+.navbar-brand img{
+       height: 60px;
+       padding-left: 20px;
+}
+
+.navbar-nav li{
+	padding: 0 10px;
+}
+
+.navbar-nav li a{
+	color: #fff !important;
+	 font-weight: 600;
+	 float: right;
+	 text-align: left;
+}
+
+.fa-bars{
+	color: #fff;
+	font-size: 30px !important;
+}
+
+.navbar-toggler{
+	outline: none !important;
+}
+
+/*---------------banner section------------------*/
+#banner{
+	background-image: linear-gradient(to right, #a517ba,#5f1782); 
+	color: #fff;
+	padding-top: 5%;
+
+}
+
+.promo-title{
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 100px;
+	color: rgb(233,114,177);
+
+}
+
+.play-btn{
+	width: 35px;
+	margin: 20px;
+
+}
+
+#banner a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.img-fluid{
+	padding: 20px;
+
+}
+
+.bottom-img{
+	width: 100%;
+}
+
+#services{
+	padding: 80px 0;
+}
+
+.services{
+	padding: 2px;
+}
+
+#services h4{
+	padding: 5px;
+	margin-top: 25px;
+	text-transform: uppercase;
+}
+
+.title::before
+{
+	content: '';
+	background:#7b1798;
+	height: 5px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto; 
+	display: block;
+	transform: translateY(63px);
+}
+
+.title::after
+{
+	content: '';
+	background:#7b1798;
+	height: 10px;
+	width: 50px;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-bottom:40px; 
+	display: block;
+	transform: translateY(8px);
+}
+
+
+#services .btn-primary
+{
+	box-shadow: none;
+	padding: 8px 25px;
+	border:none;
+	border-radius: 20px;
+	background-image: linear-gradient(to right, #a517ba,#5f1782); 
+}
+
+/*----------------about-us section------------*/
+#about-us{
+	background: #f8f9fa;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.about-title{
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 8%;
+}
+
+#about-us ul li{
+	margin: 10px 0;
+}
+
+#about-us ul{
+	margin-left: 20px;
+}
+
+#testimonials{
+	margin: 100px 0;
+}
+
+.testimonials
+{
+	border-left: 4px solid #7b1798;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.testimonials img
+{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	margin: 0 10px;
+
+}
+
+.user-details{
+	display: inline-block;
+	font-size: 12px;
+}
+
+/*-------------social-media section---------------*/
+#social-media{
+	background: #f8f9fa;
+	padding: 100px 0;
+}
+#social-media p{
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 30px; 
+}
+
+.social-icons img{
+	width: 60px;
+	transition: 0.5s;
+	padding: 10px;
+}
+
+.social-icons a:hover img
+{
+ transform: translateY(-10px);
+}
+
+
+/*---------------------------Recent Startups------------*/
+#start-up{
+	background color: rgb(255,145,179);
+	padding: 100px 0;
+}
+
+#start-up p {
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 30px;
+		
+}
+/*Button used to open the chat form-fixed at the bottom of the page */
+.open-button{
+
+	background-color: #555;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 23px;
+	right: 28px;
+	width: 280px;
+}
+
+/* The popup chat -hidden by default */
+.chat-popup{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border:3px solid #f1f1f1;
+	z-index: 9;
+
+}
+
+/* Add styles to the form-container */
+.form-container{
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+	resize: none;
+	min-height: 200px;
+
+}
+
+/* When the textarea gets  focus,do something */
+.form-container textarea:focus{
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Set a style for the submit /send button */
+.form-container .btn{
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+
+/* Add a purple background color to the cancel button */
+.form-container  .cancel{
+	background-color: rgb(107,48,107);
+}
+
+/*Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover{
+	opacity: 1;
+}
+
+/*--------------footer section----------------*/
+
+#footer{
+	background-image: linear-gradient(to right, #a517ba,#5f1782); 
+	color: #fff;
+}
+
+.footer-img{
+	width: 100%;
+}
+
+.footer-box
+{
+	padding: 20px;
+}
+
+.footer-box img{
+	width: 120px;
+	margin-bottom: 20px; 
+}
+
+.footer-box .fa{
+margin-right: 8px; 
+font-size: 25px;
+height:40px; 
+width:40px;
+text-align: center;
+padding-top: 7px;
+border-radius: 2px;
+background-image:linear-gradient(to right, #a517ba,#5f1782); 
+}
+
+.footer-box .form-control
+{
+	box-shadow: none;
+	border:none;
+	border-radius: 0;
+	margin-top: 25px;
+	max-width: 250px;
+}
+
+.footer-box .btn-primary
+{
+	box-shadow: none !important;
+	border:none;
+	border-radius: 0;
+	margin-top: 30px;
+	background-image: linear-gradient(to right, #a517ba,#5f1782); 
+}	
+
+hr{
+	background-color: #fff;
+
+}
+.copyright{
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	text-align: center; 
+}
